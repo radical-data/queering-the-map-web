@@ -1,5 +1,23 @@
 @import '@fontsource/apfel-grotezk';
 
+@font-face {
+    font-family: 'PP Neue Montreal Arabic';
+    src: url('/fonts/PPNeueMontrealArabic-Regular.woff2') format('woff2'),
+        url('/fonts/PPNeueMontrealArabic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal Arabic';
+    src: url('/fonts/PPNeueMontrealArabic-Medium.woff2') format('woff2'),
+        url('/fonts/PPNeueMontrealArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* colors */
     --color-dark: #1a1a1a;
@@ -15,14 +33,14 @@
     --transition-duration: 300ms;
 
     /* z-index */
-    --logo-z-index: 20;
-    --overlay-z-index: 15;
+    --logo-z-index: 15;
+    --overlay-z-index: 20;
     --overlay-trigger-z-index: 5;
 }
 
 body {
     margin: 0;
-    font-family: 'Apfel Grotezk', sans-serif;
+    font-family: 'PP Neue Montreal Arabic', sans-serif;
 }
 
 div.maplibregl-popup-content,
@@ -33,4 +51,33 @@ div.mapboxgl-popup-content {
 	width: max-content;
 	box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
 	font-family: 'Apfel Grotezk', sans-serif;
+}
+
+div.copy-inner {
+    font-size: 15px;
+}
+
+div.copy-inner a {
+    color: black;
+}
+
+div.copy-separator {
+    margin: 0 -7px;
+    margin-bottom: 1em;
+
+    border: 0;
+    border-bottom: black 1px solid;
+}
+
+p.copy-header {
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+div.press-item {
+    margin: 1.25em 0;
+}
+
+div.press-item p {
+    margin: 0;
 }
